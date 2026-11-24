@@ -120,7 +120,7 @@ func parsePorts(portStr string) []int {
 
 func main() {
 	target := flag.String("target", "127.0.0.1", "Target IP address or hostname to scan")
-	portList := flag.String("ports", "21,22,23,25,80,443,445,554,3389,8000,8080,8443,8554,37777", "Comma-separated ports or ranges (e.g., 80,443,8000-8010)")
+	portList := flag.String("ports", "21,22,23,25,80,443,445,554,3000,3001,3389,8000,8080,8443,8554,37777", "Comma-separated ports or ranges (e.g., 80,443,8000-8010)")
 	flag.Parse()
 
 	ports := parsePorts(*portList)
